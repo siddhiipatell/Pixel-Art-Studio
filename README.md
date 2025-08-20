@@ -2,7 +2,7 @@
 
 A powerful, browser-based pixel art editor built with **React** and **Vite**. Create, paint, and explore pixel-level art with an intuitive interface, flexible tools, and responsive canvas layout.
 
----
+
 
 ## 🚀 Features
 
@@ -21,7 +21,7 @@ A powerful, browser-based pixel art editor built with **React** and **Vite**. Cr
 * **Tool Legend & Status Bar**
   Displays active tool and color, as well as pixel dimensions and canvas size stats.
 
----
+
 
 ## 🛠 Getting Started
 
@@ -61,7 +61,7 @@ pnpm build
 
 This will generate optimized production files in the `dist` directory, ready for deployment.
 
----
+
 
 ## 🎨 Usage
 
@@ -75,7 +75,7 @@ Once the app is running, you'll see:
 
 Use your pointer to draw, erase, or fill cells. Pointer events (`onPointerDown`, `onPointerEnter`, `onPointerUp`, etc.) ensure smooth interaction across devices.
 
----
+
 
 ## ⚙️ Technologies
 
@@ -83,7 +83,7 @@ Use your pointer to draw, erase, or fill cells. Pointer events (`onPointerDown`,
 * **Tailwind CSS** — Utility-first styling for rapid UI building.
 * **JavaScript / JSX** — Modern scripting and component logic.
 
----
+
 
 ## 🤝 Contributions
 
@@ -97,13 +97,13 @@ Contributions are welcome! Whether you want to refine tools, enhance performance
 
 ...feel free to open issues or submit pull requests.
 
----
+
 
 ## 📜 License
 
 © 2025 Siddhi Patel. All rights reserved.
 
----
+
 
 ## 📬 Contact
 
