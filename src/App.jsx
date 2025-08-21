@@ -169,8 +169,8 @@ export default function PixelArtStudio() {
     ctx.imageSmoothingEnabled = false;
 
     // Fill transparent background as white for visibility
-    ctx.fillStyle = "#ffffff";
-    ctx.fillRect(0, 0, size, size);
+    // ctx.fillStyle = "#ffffff";
+    // ctx.fillRect(0, 0, size, size);
 
     // Paint pixels
     for (let y = 0; y < size; y++) {
