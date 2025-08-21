@@ -262,7 +262,7 @@ export default function PixelArtStudio() {
       </header>
 
       {/* Main */}
-      <main className="mx-auto grid max-w-6xl grid-cols-1 gap-4 p-4 lg:grid-cols-[280px,1fr]">
+      <main className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-4 py-2 lg:grid-cols-[280px,1fr]">
         {/* Sidebar Controls */}
         <aside className="space-y-4">
           <section className="rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm">
@@ -312,13 +312,25 @@ export default function PixelArtStudio() {
           <section className="rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm">
             <h2 className="mb-3 text-sm font-medium text-zinc-600">Colors</h2>
             <div className="flex items-center gap-2">
-              <input
+              {/* <input
                 type="color"
                 value={currentColor}
                 onChange={(e) => setCurrentColor(e.target.value)}
-                className="h-10 w-10 cursor-pointer rounded-xl border border-zinc-300"
+                className="h-10 w-10 cursor-pointer rounded-3xl border border-zinc-300 appearance-none p-0"
                 title="Pick color"
-              />
+              /> */}
+              <label className="relative inline-block h-10 w-10">
+                <span
+                  className="absolute inset-0 rounded-full border border-zinc-300"
+                  style={{ backgroundColor: currentColor }}
+                />
+                <input
+                  type="color"
+                  value={currentColor}
+                  onChange={(e) => setCurrentColor(e.target.value)}
+                  className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
+                />
+              </label>
               <button
                 onClick={() => setPalette((p) => Array.from(new Set([currentColor, ...p])).slice(0, 24))}
                 className="rounded-xl border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-50"
@@ -360,8 +372,7 @@ export default function PixelArtStudio() {
 
         {/* Drawing board */}
         <section 
-            className="rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm overflow-auto"
-            style={{ width: `calc(100vh - 130px)` }}
+            className="rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm overflow-auto w-full"
         >
           <div className="mb-3 flex items-center justify-between">
             <div className="text-sm text-zinc-500">{size}×{size} • {Math.round((size*size)/100)/10}k pixels</div>
